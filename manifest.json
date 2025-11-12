@@ -1,10 +1,10 @@
 {
-  "name": "Zlatan Ibrahimović Official Website",
+  "name": "Zlatan Ibrahimović — ICON CHRONICLES",
   "short_name": "Zlatan",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#000",
-  "theme_color": "#e60023",
+  "theme_color": "#ffd700",
   "icons": [
     {
       "src": "assets/images/zlatan-icon.png",
