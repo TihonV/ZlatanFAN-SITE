@@ -11,7 +11,7 @@
 <body>
 
   <header class="hero">
-    <!-- 3D модель слева от заголовка -->
+    <!-- 3D модель слева -->
     <div class="model-container">
       <model-viewer
         src="models/zlatan.glb"
@@ -23,67 +23,55 @@
         disable-pan
         auto-rotate
         ar
-        style="width: 150px; height: 300px;"
+        style="width: 250px; height: 400px;"
       ></model-viewer>
     </div>
+
+    <!-- Заголовок справа -->
     <div class="hero-text">
-      <h1>ZLATAN IBRAHIMOVIĆ</h1>
+      <h1><span class="gold">ZLATAN</span></h1>
+      <h2>IBRAHIMOVICH</h2>
       <p>I am Zlatan. And you are not.</p>
     </div>
   </header>
 
   <main>
-    <section class="section">
-      <h2>CAREER Highlights</h2>
-      <p>Zlatan's highlights and achievements.</p>
-      <button class="btn" onclick="location.href='#career'">View Highlights</button>
+    <!-- Ключевой момент 1 -->
+    <section class="career-block">
+      <h3>🏆 THE LEGENDARY RETURN TO MILAN</h3>
+      <p>At 39 years old, Zlatan returned to AC Milan in 2020 and led the team to their first Serie A title in 11 years — proving age is just a number.</p>
+      <button class="btn">Read More</button>
     </section>
 
-    <section class="section">
-      <h2>ZLATAN Water</h2>
-      <p>ZLATAN is much more than water... It is the essence of arrogance and a lifestyle.</p>
-      <button class="btn" onclick="location.href='#water'">View more</button>
+    <!-- Ключевой момент 2 -->
+    <section class="career-block">
+      <h3>⚽ GOAL OF THE CENTURY - VOLLEY vs ENGLAND</h3>
+      <p>In 2012, Zlatan scored one of the greatest goals ever — a 30-meter bicycle kick against England. FIFA awarded him “Puskás Award” for this goal.</p>
+      <button class="btn">Watch Goal</button>
     </section>
 
-    <section class="section">
-      <h2>Zlatan Wellness App</h2>
-      <p>ZLATANOS is an all-in-one wellness experience for Fitness, Nutrition and Mental Balance, founded by Zlatan.</p>
-      <button class="btn" onclick="location.href='#app'">View more</button>
+    <!-- Ключевой момент 3 -->
+    <section class="career-block">
+      <h3>👑 KING OF PARIS</h3>
+      <p>At PSG, Zlatan won 4 Ligue 1 titles, became the club’s all-time top scorer, and declared himself “God” — and no one argued.</p>
+      <button class="btn">View Stats</button>
     </section>
 
-    <section class="section">
-      <h2>ZLATAN Fragrances</h2>
-      <p>Define your own legacy with the NEW fragrance, Zlatan Legend. A long-lasting woody aromatic scent, inspired by Zlatan's relentless drive and modern masculinity.</p>
-      <button class="btn" onclick="location.href='#fragrances'">Shop Now</button>
+    <!-- Ключевой момент 4 -->
+    <section class="career-block">
+      <h3>🇺🇸 LA GALAXY DOMINATION</h3>
+      <p>From 2018 to 2023, Zlatan ruled MLS, scoring 82 goals in 127 games. He turned American soccer into a spectacle.</p>
+      <button class="btn">See Highlights</button>
     </section>
 
-    <section class="section">
-      <h2>ZLATAN Underwear</h2>
-      <p>Working with quality materials and many years of experience of producing underwear, the ZLATAN collections delivers a perfect and unique fit.</p>
-      <button class="btn" onclick="location.href='#underwear'">View more</button>
+    <!-- Ключевой момент 5 -->
+    <section class="career-block">
+      <h3>🇸🇪 SWEDEN NATIONAL TEAM</h3>
+      <p>62 goals in 122 caps. Led Sweden to Euro 2020 and was named “Best Swedish Player of All Time.”</p>
+      <button class="btn">View Career</button>
     </section>
 
-    <section class="section">
-      <h2>ZLATAN Footwear</h2>
-      <p>A new footwear line that further enriches the whole collection and interprets the style of the most demanding and eccentric man.</p>
-      <button class="btn" onclick="location.href='#footwear'">View more</button>
-    </section>
-
-    <section id="career" class="section">
-      <h2>Career Highlights</h2>
-      <ul>
-        <li>Ajax</li>
-        <li>Juventus</li>
-        <li>Inter Milan</li>
-        <li>Barcelona</li>
-        <li>PSG</li>
-        <li>Manchester United</li>
-        <li>LA Galaxy</li>
-        <li>Sweden</li>
-      </ul>
-    </section>
-
-    <!-- Видео из VK -->
+    <!-- Блок с видео VK -->
     <section class="video-section">
       <h2>GOALS & HIGHLIGHTS</h2>
       <iframe
@@ -97,11 +85,7 @@
       ></iframe>
     </section>
 
-    <section class="museum">
-      <h2>#ZLATANLegacy Museum</h2>
-      <p>Coming Soon...</p>
-    </section>
-
+    <!-- Подписка -->
     <section id="newsletter" class="section">
       <h2>Stay Tuned</h2>
       <p>Subscribe my newsletter and don’t miss any update on new products, promotions or even career events.</p>
