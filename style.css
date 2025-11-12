@@ -12,11 +12,21 @@ body {
 }
 
 .hero {
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 100px 20px;
   background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('assets/images/zlatan-bg.jpg');
   background-size: cover;
   background-position: center;
+}
+
+.model-container {
+  margin-right: 30px;
+}
+
+.hero-text {
+  text-align: center;
 }
 
 .hero h1 {
@@ -49,13 +59,12 @@ body {
 .video-section {
   padding: 60px 20px;
   text-align: center;
+  background-color: #111;
 }
 
-.video-section video {
-  width: 100%;
-  max-width: 600px;
-  margin: 20px auto;
-  display: block;
+.video-section iframe {
+  max-width: 100%;
+  height: auto;
 }
 
 .museum {
