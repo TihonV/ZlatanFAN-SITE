@@ -11,8 +11,25 @@
 <body>
 
   <header class="hero">
-    <h1>ZLATAN IBRAHIMOVIĆ</h1>
-    <p>I am Zlatan. And you are not.</p>
+    <!-- 3D модель слева от заголовка -->
+    <div class="model-container">
+      <model-viewer
+        src="models/zlatan.glb"
+        alt="Zlatan Ibrahimović 3D Model"
+        ar-modes="webxr scene-viewer quick-look"
+        camera-controls
+        environment-image="neutral"
+        shadow-intensity="1"
+        disable-pan
+        auto-rotate
+        ar
+        style="width: 150px; height: 300px;"
+      ></model-viewer>
+    </div>
+    <div class="hero-text">
+      <h1>ZLATAN IBRAHIMOVIĆ</h1>
+      <p>I am Zlatan. And you are not.</p>
+    </div>
   </header>
 
   <main>
@@ -66,20 +83,18 @@
       </ul>
     </section>
 
+    <!-- Видео из VK -->
     <section class="video-section">
       <h2>GOALS & HIGHLIGHTS</h2>
-      <video controls>
-        <source src="videos/goal1.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <video controls>
-        <source src="videos/goal2.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <video controls>
-        <source src="videos/goal3.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+      <iframe
+        src="https://vkvideo.ru/video_ext.php?oid=-228366024&id=456239227&autoplay=1"
+        width="853"
+        height="480"
+        style="background-color: #000"
+        allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;"
+        frameborder="0"
+        allowfullscreen
+      ></iframe>
     </section>
 
     <section class="museum">
@@ -99,6 +114,8 @@
     <p>© 2025 Zlatan Ibrahimović. All rights reserved.</p>
   </footer>
 
+  <!-- Подключение 3D Viewer -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
