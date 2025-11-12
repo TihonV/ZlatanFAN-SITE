@@ -6,7 +6,7 @@ function subscribe() {
   const email = document.getElementById('email').value;
   if (email) {
     localStorage.setItem('subscribedEmail', email);
-    alert('Thank you for subscribing, ' + email + '. I will remember your name.');
+    alert('Спасибо за подписку, ' + email + '. Я запомню ваше имя.');
   }
 }
 
