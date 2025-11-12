@@ -5,7 +5,6 @@ const urlsToCache = [
   '/style.css',
   '/script.js',
   '/manifest.json',
-  '/models/zlatan.glb',
   '/assets/images/zlatan-bg.jpg',
   'https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js'
 ];
