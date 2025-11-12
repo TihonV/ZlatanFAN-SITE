@@ -3,103 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zlatan Ibrahimović — Official Website</title>
+  <title>Zlatan Ibrahimović — ICON CHRONICLES</title>
   <link rel="stylesheet" href="style.css">
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#000">
 </head>
 <body>
 
-  <header class="hero">
-    <!-- 3D модель слева -->
-    <div class="model-container">
-      <model-viewer
-        src="models/zlatan.glb"
-        alt="Zlatan Ibrahimović 3D Model"
-        ar-modes="webxr scene-viewer quick-look"
-        camera-controls
-        environment-image="neutral"
-        shadow-intensity="1"
-        disable-pan
-        auto-rotate
-        ar
-        style="width: 250px; height: 400px;"
-      ></model-viewer>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <img src="https://avatars.mds.yandex.net/i?id=9761e70017257fa62872c6669fec1e03_l-5351568-images-thumbs&n=13" alt="Zlatan Ibrahimović" class="hero-image">
+      <div class="overlay"></div>
+      <div class="text-overlay">
+        <h1>EA SPORTS FC MOBILE</h1>
+        <h2>ICON CHRONICLES</h2>
+        <h3>ПУТЬ ЗЛАТАНА</h3>
+        <button class="cta-button">ЧИТАТЬ СЕЙЧАС</button>
+      </div>
     </div>
+  </section>
 
-    <!-- Заголовок справа -->
-    <div class="hero-text">
-      <h1><span class="gold">ZLATAN</span></h1>
-      <h2>IBRAHIMOVICH</h2>
-      <p>I am Zlatan. And you are not.</p>
+  <!-- Career Highlights -->
+  <section class="career-highlights">
+    <h2>CAREER HIGHLIGHTS</h2>
+    <div class="highlight-grid">
+      <div class="highlight-card">
+        <h3>🏆 Sporting CP</h3>
+        <p>Дебют в профессиональном футболе. Первый шаг к величию.</p>
+      </div>
+      <div class="highlight-card">
+        <h3>⚽ Manchester United FC</h3>
+        <p>Первый чемпионат Англии, первый Голден Бут, первый Лига Чемпионов.</p>
+      </div>
+      <div class="highlight-card">
+        <h3>👑 Real Madrid CF</h3>
+        <p>Рекордный гол за клуб. 4 титула Лиги Чемпионов. Король Мадрида.</p>
+      </div>
+      <div class="highlight-card">
+        <h3>🇮🇹 Juventus FC</h3>
+        <p>Бронзовый бутс. Три титула Серии А. Непобедимость в Италии.</p>
+      </div>
+      <div class="highlight-card">
+        <h3>🇸🇦 Al-Nassr FC</h3>
+        <p>Новый вызов. Новая эра. Златан не останавливается.</p>
+      </div>
+      <div class="highlight-card">
+        <h3>🇸🇪 Portugal</h3>
+        <p>Легенда сборной. Капитан. Герой Евро-2016. Национальный символ.</p>
+      </div>
     </div>
-  </header>
+  </section>
 
-  <main>
-    <!-- Ключевой момент 1 -->
-    <section class="career-block">
-      <h3>🏆 THE LEGENDARY RETURN TO MILAN</h3>
-      <p>At 39 years old, Zlatan returned to AC Milan in 2020 and led the team to their first Serie A title in 11 years — proving age is just a number.</p>
-      <button class="btn">Read More</button>
-    </section>
+  <!-- Video Section -->
+  <section class="video-section">
+    <h2>GOALS & HIGHLIGHTS</h2>
+    <iframe
+      src="https://vkvideo.ru/video_ext.php?oid=-228366024&id=456239227&autoplay=1"
+      width="853"
+      height="480"
+      style="background-color: #000"
+      allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+  </section>
 
-    <!-- Ключевой момент 2 -->
-    <section class="career-block">
-      <h3>⚽ GOAL OF THE CENTURY - VOLLEY vs ENGLAND</h3>
-      <p>In 2012, Zlatan scored one of the greatest goals ever — a 30-meter bicycle kick against England. FIFA awarded him “Puskás Award” for this goal.</p>
-      <button class="btn">Watch Goal</button>
-    </section>
-
-    <!-- Ключевой момент 3 -->
-    <section class="career-block">
-      <h3>👑 KING OF PARIS</h3>
-      <p>At PSG, Zlatan won 4 Ligue 1 titles, became the club’s all-time top scorer, and declared himself “God” — and no one argued.</p>
-      <button class="btn">View Stats</button>
-    </section>
-
-    <!-- Ключевой момент 4 -->
-    <section class="career-block">
-      <h3>🇺🇸 LA GALAXY DOMINATION</h3>
-      <p>From 2018 to 2023, Zlatan ruled MLS, scoring 82 goals in 127 games. He turned American soccer into a spectacle.</p>
-      <button class="btn">See Highlights</button>
-    </section>
-
-    <!-- Ключевой момент 5 -->
-    <section class="career-block">
-      <h3>🇸🇪 SWEDEN NATIONAL TEAM</h3>
-      <p>62 goals in 122 caps. Led Sweden to Euro 2020 and was named “Best Swedish Player of All Time.”</p>
-      <button class="btn">View Career</button>
-    </section>
-
-    <!-- Блок с видео VK -->
-    <section class="video-section">
-      <h2>GOALS & HIGHLIGHTS</h2>
-      <iframe
-        src="https://vkvideo.ru/video_ext.php?oid=-228366024&id=456239227&autoplay=1"
-        width="853"
-        height="480"
-        style="background-color: #000"
-        allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;"
-        frameborder="0"
-        allowfullscreen
-      ></iframe>
-    </section>
-
-    <!-- Подписка -->
-    <section id="newsletter" class="section">
-      <h2>Stay Tuned</h2>
-      <p>Subscribe my newsletter and don’t miss any update on new products, promotions or even career events.</p>
-      <input type="email" id="email" placeholder="Your email">
-      <button onclick="subscribe()">Subscribe</button>
-    </section>
-  </main>
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <h2>Stay Tuned</h2>
+    <p>Подпишитесь на рассылку и не пропустите обновления, продукты или события карьеры.</p>
+    <input type="email" id="email" placeholder="Ваш email">
+    <button onclick="subscribe()">Подписаться</button>
+  </section>
 
   <footer>
     <p>© 2025 Zlatan Ibrahimović. All rights reserved.</p>
   </footer>
 
-  <!-- Подключение 3D Viewer -->
-  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
