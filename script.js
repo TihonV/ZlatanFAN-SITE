@@ -6,7 +6,7 @@ function subscribe() {
   const email = document.getElementById('email').value;
   if (email) {
     localStorage.setItem('subscribedEmail', email);
-    alert('Спасибо за подписку, ' + email + '. Я запомню ваше имя.');
+    alert('Thank you for subscribing, ' + email + '. I will remember your name.');
   }
 }
 
@@ -18,3 +18,24 @@ if ('serviceWorker' in navigator) {
       .catch(err => console.log('SW failed'));
   });
 }
+
+// Анимация при скролле
+document.addEventListener('DOMContentLoaded', function() {
+  const sections = document.querySelectorAll('.feature-block, .career-section, .video-section, .museum-section, .newsletter-section');
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+      }
+    });
+  }, { threshold: 0.1 });
+
+  sections.forEach(section => {
+    section.style.opacity = '0';
+    section.style.transform = 'translateY(30px)';
+    section.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+    observer.observe(section);
+  });
+});
