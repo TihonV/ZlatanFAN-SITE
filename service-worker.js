@@ -5,11 +5,9 @@ const urlsToCache = [
   '/style.css',
   '/script.js',
   '/manifest.json',
-  '/videos/goal1.mp4',
-  '/videos/goal2.mp4',
-  '/videos/goal3.mp4',
+  '/models/zlatan.glb',
   '/assets/images/zlatan-bg.jpg',
-  '/assets/icons/arrow.svg'
+  'https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js'
 ];
 
 self.addEventListener('install', event => {
