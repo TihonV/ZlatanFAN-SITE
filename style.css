@@ -9,30 +9,87 @@ body {
   background-color: #000;
   color: #fff;
   line-height: 1.6;
+  background-image: url('https://avatars.mds.yandex.net/i?id=9761e70017257fa62872c6669fec1e03_l-5351568-images-thumbs&n=13');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .hero {
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 100px 20px;
-  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('assets/images/zlatan-bg.jpg');
-  background-size: cover;
-  background-position: center;
+  justify-content: space-between;
+  padding: 80px 40px;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .model-container {
-  margin-right: 30px;
+  flex-shrink: 0;
 }
 
 .hero-text {
-  text-align: center;
+  text-align: left;
+  max-width: 50%;
 }
 
 .hero h1 {
-  font-size: 4rem;
-  margin-bottom: 20px;
+  font-size: 5rem;
+  margin-bottom: 10px;
   text-transform: uppercase;
+  color: #ffd700;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.8), 0 0 20px rgba(255, 215, 0, 0.6);
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.gold {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.8), 0 0 20px rgba(255, 215, 0, 0.6);
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #ccc;
+  font-style: italic;
+}
+
+.career-block {
+  padding: 60px 40px;
+  text-align: left;
+  border-bottom: 1px solid #333;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: background 0.3s;
+}
+
+.career-block:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.career-block h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #ffd700;
+  text-shadow: 0 0 5px rgba(255, 215, 0, 0.6);
+}
+
+.career-block p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #eee;
+  line-height: 1.6;
 }
 
 .btn {
@@ -40,37 +97,35 @@ body {
   color: white;
   border: none;
   padding: 10px 20px;
-  margin-top: 20px;
   cursor: pointer;
   font-size: 1rem;
-  transition: background 0.3s;
+  transition: background 0.3s, transform 0.2s;
+  border-radius: 4px;
+  font-weight: bold;
 }
 
 .btn:hover {
   background: #b3001a;
-}
-
-.section {
-  padding: 60px 20px;
-  text-align: center;
-  border-bottom: 1px solid #333;
+  transform: scale(1.05);
 }
 
 .video-section {
-  padding: 60px 20px;
+  padding: 60px 40px;
   text-align: center;
-  background-color: #111;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .video-section iframe {
   max-width: 100%;
   height: auto;
+  border: none;
+  border-radius: 8px;
 }
 
-.museum {
-  padding: 60px 20px;
+#newsletter {
+  padding: 60px 40px;
   text-align: center;
-  background-color: #111;
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 #newsletter input {
@@ -78,10 +133,34 @@ body {
   width: 300px;
   margin-right: 10px;
   margin-top: 20px;
+  border-radius: 4px;
+  border: none;
 }
 
 footer {
   text-align: center;
   padding: 20px;
-  background-color: #111;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Адаптивность */
+@media (max-width: 900px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  .hero-text {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+  .hero h2 {
+    font-size: 2rem;
+  }
+  .career-block {
+    padding: 40px 20px;
+  }
 }
