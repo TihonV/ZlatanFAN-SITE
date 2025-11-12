@@ -11,100 +11,167 @@ body {
   line-height: 1.6;
 }
 
-.hero {
-  position: relative;
-  height: 100vh;
+/* Header */
+.header {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  overflow: hidden;
+  padding: 20px 40px;
+  background-color: #000;
+  border-bottom: 1px solid #333;
+}
+
+.logo {
+  font-size: 2rem;
+  color: #ffd700;
+  text-shadow: 0 0 5px rgba(255, 215, 0, 0.6);
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin-left: 10px;
+  transition: color 0.3s, background 0.3s;
+  border-radius: 5px;
+}
+
+nav li a:hover {
+  color: #ffd700;
+  background-color: rgba(255, 215, 0, 0.1);
+}
+
+/* Hero Section */
+.hero {
+  padding: 80px 40px;
+  background-color: #000;
+  position: relative;
 }
 
 .hero-content {
-  position: relative;
-  width: 100%;
-  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 40px;
 }
 
 .hero-image {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  filter: brightness(0.7);
+  width: 300px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
 
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.8));
+.hero-text {
+  max-width: 50%;
 }
 
-.text-overlay {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-  color: #fff;
-  z-index: 2;
-}
-
-.text-overlay h1 {
-  font-size: 2rem;
+.hero h1 {
+  font-size: 5rem;
+  margin-bottom: 10px;
   color: #ffd700;
   text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
-  margin-bottom: 10px;
+  font-weight: 900;
   letter-spacing: 2px;
-  font-weight: bold;
 }
 
-.text-overlay h2 {
-  font-size: 3.5rem;
-  color: #ffd700;
-  text-shadow: 0 0 15px rgba(255, 215, 0, 0.8);
-  margin-bottom: 20px;
-  letter-spacing: 4px;
-  font-weight: 900;
+.gold {
   font-family: 'Bebas Neue', sans-serif;
 }
 
-.text-overlay h3 {
+.hero h2 {
   font-size: 2.5rem;
+  margin-bottom: 10px;
   color: #fff;
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.6);
-  margin-bottom: 30px;
-  letter-spacing: 2px;
-  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
 }
 
-.cta-button {
-  background: linear-gradient(135deg, #ffd700, #ffcc00);
-  color: #000;
-  border: none;
-  padding: 15px 40px;
+.hero p {
   font-size: 1.2rem;
-  font-weight: bold;
+  color: #ccc;
+  font-style: italic;
+}
+
+/* Feature Blocks */
+.feature-block {
+  display: flex;
+  align-items: center;
+  padding: 80px 40px;
+  background-color: #000;
+  border-bottom: 1px solid #333;
+  transition: background 0.3s;
+}
+
+.feature-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.feature-image {
+  flex: 1;
+  padding: 20px;
+}
+
+.feature-image img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.feature-text {
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+}
+
+.feature-text h3 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #ffd700;
+  text-shadow: 0 0 5px rgba(255, 215, 0, 0.6);
+}
+
+.feature-text p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #eee;
+  line-height: 1.6;
+}
+
+.btn {
+  background: linear-gradient(135deg, #e60023, #b3001a);
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1rem;
   cursor: pointer;
   border-radius: 50px;
-  box-shadow: 0 4px 15px rgba(255, 215, 0, 0.5);
+  box-shadow: 0 4px 15px rgba(230, 0, 35, 0.5);
   transition: all 0.3s ease;
+  font-weight: bold;
 }
 
-.cta-button:hover {
+.btn:hover {
+  background: linear-gradient(135deg, #b3001a, #800014);
   transform: scale(1.05);
-  box-shadow: 0 6px 20px rgba(255, 215, 0, 0.7);
+  box-shadow: 0 6px 20px rgba(230, 0, 35, 0.7);
 }
 
-.career-highlights {
+/* Career Section */
+.career-section {
   padding: 80px 40px;
   background-color: #000;
   text-align: center;
 }
 
-.career-highlights h2 {
+.career-section h2 {
   font-size: 3rem;
   color: #ffd700;
   text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
@@ -113,7 +180,7 @@ body {
   font-family: 'Bebas Neue', sans-serif;
 }
 
-.highlight-grid {
+.career-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
@@ -121,7 +188,7 @@ body {
   margin: 0 auto;
 }
 
-.highlight-card {
+.career-card {
   background: rgba(255, 255, 255, 0.05);
   padding: 30px;
   border-radius: 15px;
@@ -130,60 +197,93 @@ body {
   transition: transform 0.3s ease, background 0.3s ease;
 }
 
-.highlight-card:hover {
+.career-card:hover {
   background: rgba(255, 255, 255, 0.1);
   transform: translateY(-5px);
 }
 
-.highlight-card h3 {
+.career-card h3 {
   font-size: 1.5rem;
   color: #ffd700;
   margin-bottom: 15px;
   text-shadow: 0 0 5px rgba(255, 215, 0, 0.6);
 }
 
-.highlight-card p {
+.career-card p {
   font-size: 1rem;
   color: #ccc;
   line-height: 1.6;
 }
 
+/* Video Section */
 .video-section {
-  padding: 60px 40px;
-  text-align: center;
+  padding: 80px 40px;
   background-color: #000;
+  text-align: center;
 }
 
 .video-section h2 {
-  font-size: 2.5rem;
+  font-size: 3rem;
   color: #ffd700;
   text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  letter-spacing: 3px;
+  font-family: 'Bebas Neue', sans-serif;
 }
 
-.video-section iframe {
-  max-width: 100%;
-  height: auto;
-  border: none;
+.video-container {
+  max-width: 1000px;
+  margin: 0 auto;
   border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.8);
 }
 
-.newsletter {
-  padding: 60px 40px;
-  text-align: center;
+.video-container iframe {
+  width: 100%;
+  height: 600px;
+  border: none;
+}
+
+/* Museum Section */
+.museum-section {
+  padding: 80px 40px;
   background-color: #000;
+  text-align: center;
 }
 
-.newsletter h2 {
-  font-size: 2.5rem;
+.museum-section h2 {
+  font-size: 3rem;
   color: #ffd700;
   text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
   margin-bottom: 20px;
+  letter-spacing: 3px;
+  font-family: 'Bebas Neue', sans-serif;
 }
 
-.newsletter p {
-  font-size: 1.1rem;
+.museum-section p {
+  font-size: 1.5rem;
+  color: #ccc;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+  padding: 80px 40px;
+  background-color: #000;
+  text-align: center;
+}
+
+.newsletter-section h2 {
+  font-size: 3rem;
+  color: #ffd700;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.8);
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+.newsletter-section p {
+  font-size: 1.2rem;
   color: #ccc;
   margin-bottom: 30px;
 }
@@ -203,7 +303,7 @@ body {
   color: #aaa;
 }
 
-.newsletter button {
+.newsletter-section button {
   background: linear-gradient(135deg, #e60023, #b3001a);
   color: white;
   border: none;
@@ -214,12 +314,13 @@ body {
   transition: all 0.3s ease;
 }
 
-.newsletter button:hover {
+.newsletter-section button:hover {
   background: linear-gradient(135deg, #b3001a, #800014);
   transform: scale(1.05);
 }
 
-footer {
+/* Footer */
+.footer {
   text-align: center;
   padding: 20px;
   background-color: #000;
@@ -227,22 +328,44 @@ footer {
   font-size: 0.9rem;
 }
 
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.feature-block, .career-section, .video-section, .museum-section, .newsletter-section {
+  animation: fadeInUp 1s ease-out;
+}
+
 /* Адаптивность */
-@media (max-width: 768px) {
-  .text-overlay h2 {
-    font-size: 2.5rem;
+@media (max-width: 900px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
   }
-  .text-overlay h3 {
-    font-size: 2rem;
+  .hero-image {
+    width: 100%;
+    max-width: 300px;
   }
-  .cta-button {
-    padding: 12px 25px;
-    font-size: 1rem;
+  .hero-text {
+    max-width: 100%;
+    margin-top: 30px;
   }
-  .career-highlights h2 {
-    font-size: 2.5rem;
+  .feature-block, .feature-block.reverse {
+    flex-direction: column;
   }
-  .highlight-grid {
-    grid-template-columns: 1fr;
+  .feature-image, .feature-text {
+    flex: 1;
+    width: 100%;
+  }
+  .video-container iframe {
+    height: 400px;
   }
 }
